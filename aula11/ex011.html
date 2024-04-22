@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #b9f15fda;
+        }
+        h1{
+            font-size: 30px;
+            color: #552aa5b2;
+        }
+       #res{
+        font-weight: bold;
+       }
+       strong{
+        color: #820bf1;
+       }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    País de origem: <input type="text" name="txtp" id="txtp" > 
+    <input type="button" value="enviar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+   function enviar(){
+    var ctpaís = window.document.querySelector('input#txtp')
+    var país = ctpaís.value
+    var res = window.document.querySelector('div#res')
+    
+    res.innerHTML = `<p>Seu país de origem é o(a) <strong>${país}</strong></p>`
+
+    if(país == 'Brasil'){
+        res.innerHTML += '<p>Você é <strong>brasileiro(a)</strong></p>'
+    }
+    else{
+        res.innerHTML += '<p>Você é <strong>estrangeiro(a)</strong></p>'
+    }
+   }
+    </script>
+</body>
+</html>
