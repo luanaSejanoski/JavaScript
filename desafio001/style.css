@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-color: thistle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+h1,p{
+    text-align: center;
+    color: #272626;
+}
+section{
+    background-color: beige;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px; 
+    box-shadow: #00000046 3px 3px 8px ;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+}
+select{
+    margin: 40px;  
+    height: 190px;
+}
+
